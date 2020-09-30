@@ -17,9 +17,9 @@ public class Cat extends Animal {
         super(weight, name);
     }
 
-    @Override
+    @Override //polymorfism
     public void getFood() {
-        String s = (this.weight * 1000) /150 + " gram " + catfood;
+        String s = (this.weight * 1000) /150 + " gram " + catfood.foodName;
         JOptionPane.showMessageDialog(null,s);
     }
 }

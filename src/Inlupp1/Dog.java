@@ -19,9 +19,9 @@ public class Dog extends Animal {
         super(weight, name);
     }
 
-    @Override
+    @Override // Polymorfism
     public void getFood() {
-       String s = (this.weight * 1000) /100 + " gram " + dogfood;
+       String s = (this.weight * 1000) /100 + " gram " + dogfood.foodName;
        JOptionPane.showMessageDialog(null,s);
     }
 }

@@ -17,8 +17,8 @@ public class Snake extends Animal{
         super(weight, name);
     }
 
-    @Override
+    @Override //polymorfism
     public void getFood() {
-        JOptionPane.showMessageDialog(null,20 + " gram " + snakefood);
+        JOptionPane.showMessageDialog(null,20 + " gram " + snakefood.foodName);
     }
 }

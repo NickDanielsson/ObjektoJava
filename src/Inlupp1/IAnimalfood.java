@@ -8,5 +8,4 @@ package Inlupp1;
  */
 public interface IAnimalfood {
      void getFood();
-
 }

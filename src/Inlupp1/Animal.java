@@ -9,12 +9,19 @@ package Inlupp1;
 public class Animal implements IAnimalfood {
 
     // enum
-    protected enum Animalfood {HUNDFODER,KATTFODER,ORMPELLETS}
+    protected enum Animalfood {
+        HUNDFODER("Hundfoder"), KATTFODER("Kattfoder"), ORMPELLETS("Ormpellets");
+        final String foodName;
 
+        Animalfood(String name) {
+            foodName = name;
+        }
+    }
+    // Inkapsling
     protected int weight;
     protected String name;
 
-    public Animal (){
+    public Animal() {
 
     }
 
